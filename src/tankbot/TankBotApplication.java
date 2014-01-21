@@ -165,6 +165,8 @@ public class TankBotApplication extends Application {
                 Platform.exit();
             }
         });
+        
+        tank.robotInit();
         stage.show();
     }
 
