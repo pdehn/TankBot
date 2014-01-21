@@ -1,6 +1,7 @@
 
 package tankbot;
 
+import tankbot.api.TankController;
 public class MyTankController extends TankController {
 
     public void robotInit() {
