@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package tankbot;
+package tankbot.api;
 
+import tankbot.api.Victor;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 

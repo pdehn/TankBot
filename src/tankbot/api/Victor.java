@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package tankbot;
+package tankbot.api;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * @author pdehaan
  */
-public class Victor {
+public class Victor implements MotorController {
     
     /**
      * We store channel values statically so they can be accessed from the

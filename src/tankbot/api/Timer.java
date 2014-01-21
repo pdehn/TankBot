@@ -1,4 +1,4 @@
-package tankbot;
+package tankbot.api;
 
 /**
  * Simulates the Timer class from the FRC API using the system

@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package tankbot;
+package tankbot.api;
 
+import tankbot.api.TankController;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
@@ -20,11 +21,13 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import tankbot.MyTankController;
 
 /**
  *
@@ -167,6 +170,17 @@ public class TankBotApplication extends Application {
         });
         
         tank.robotInit();
+        stage.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
+            public void handle(KeyEvent event) {
+                KeyboardButton.set(event.getText(), true);
+            }
+        });
+        stage.addEventHandler(KeyEvent.KEY_RELEASED, new EventHandler<KeyEvent>() {
+            public void handle(KeyEvent event) {
+                KeyboardButton.set(event.getText(), false);
+            }
+        });
+        
         stage.show();
     }
 

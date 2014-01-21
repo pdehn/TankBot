@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package tankbot;
+package tankbot.api;
 
 /**
  * Internal Math utility

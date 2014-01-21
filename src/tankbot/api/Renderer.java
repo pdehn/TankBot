@@ -1,5 +1,6 @@
-package tankbot;
+package tankbot.api;
 
+import tankbot.api.TankController;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
